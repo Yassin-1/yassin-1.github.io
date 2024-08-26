@@ -53,8 +53,6 @@
     4. Improve text rendering
   */
   body {
-    display: block;
-    align-items: center;
     background: var(--clr-surface);
     color: var(--clr-text);
     font-family: var(--ff-base);
@@ -90,6 +88,14 @@
   /*
     Body
   */
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
   
   .qr-card{
     background-color: var(--clr-white);
