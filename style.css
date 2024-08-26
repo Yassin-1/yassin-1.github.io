@@ -20,6 +20,7 @@
   --fw-black: 700;
 
   /* font sizes */
+  --fs-200: 0.82rem;
   --fs-300: 1rem;
   --fs-400: 1.125rem;
   --fs-500: 1.375rem;
@@ -122,7 +123,7 @@ h6 {
 }
 
 .gap {
-  gap: var(--rd-500);
+  gap: var(--rd-400);
 }
 
 .qr-code {
@@ -134,18 +135,18 @@ h6 {
 .subtitles {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 200px;
 }
 
 .leading-text {
-  font-size: var(--fs-500);
+  font-size: var(--fs-300);
   font-weight: var(--fw-black);
   color: var(--clr-text);
   text-align: center;
 }
 
 .mute-text {
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   font-weight: var(--fw-regular);
   color: var(--clr-cyan-300);
   text-align: center;
