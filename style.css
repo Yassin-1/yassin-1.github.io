@@ -1,134 +1,152 @@
 :root {
-    /* colors */
-    --clr-white: hsl(220, 37%, 100%);
-    --clr-surface: hsl(212, 45%, 89%);
-    --clr-text: hsl(244, 44%, 14%);
-  
-    --clr-yellow-400: hsl(42, 99%, 69%);
-    --clr-yellow-300: hsl(47, 100%, 90%);
-    --clr-purple-400: hsl(280, 96%, 45%);
-    --clr-purple-300: hsl(282, 89%, 90%);
-    --clr-cyan-400: hsl(198, 99%, 49%);
-    --clr-cyan-300: hsl(240, 100%, 90%);
-  
-    /* font families */
-    --ff-base: "Outfit", sans-serif;
-    --ff-accent: "Young Serif", serif;
-  
-    /* font weights */
-    --fw-regular: 500;
-    --fw-bold: 600;
-    --fw-black: 700;
-  
-    /* font sizes */
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.375rem;
-    --fs-600: 1.75rem;
-    --fs-700: 2.25rem;
+  /* colors */
+  --clr-white: hsl(220, 37%, 100%);
+  --clr-surface: hsl(212, 45%, 89%);
+  --clr-text: hsl(244, 44%, 14%);
 
-    /* font sizes */
-    --rd-300: 12px;
-    --rd-400: 16px;
-    --rd-500: 20px;
-    --rd-600: 24px;
-    --rd-700: 30px;
-  }
+  --clr-yellow-400: hsl(42, 99%, 69%);
+  --clr-yellow-300: hsl(47, 100%, 90%);
+  --clr-purple-400: hsl(280, 96%, 45%);
+  --clr-purple-300: hsl(282, 89%, 90%);
+  --clr-cyan-400: hsl(198, 99%, 49%);
+  --clr-cyan-300: hsl(240, 100%, 90%);
+
+  /* font families */
+  --ff-base: "Outfit", sans-serif;
+
+  /* font weights */
+  --fw-regular: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+
+  /* font sizes */
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+
+  /* font sizes */
+  --rd-300: 12px;
+  --rd-400: 16px;
+  --rd-500: 20px;
+  --rd-600: 24px;
+  --rd-700: 30px;
+}
 
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
-  body {
-    background: var(--clr-surface);
-    color: var(--clr-text);
-    font-family: var(--ff-base);
-    font-size: var(--fs-300);
-
-  }
-  /*
+body {
+  background: var(--clr-surface);
+  color: var(--clr-text);
+  font-family: var(--ff-base);
+  font-size: var(--fs-300);
+}
+/*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     6. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     8. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
-  /*
+/*
     Body
   */
 
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .qr-card{
-    background-color: var(--clr-white);
-    border-radius: var(--rd-400);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    padding: var(--rd-400);
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
 
-  .qr-code{
-    border-radius: var(--rd-300);
-    width: 400px;
-    height: 400px;
-  }
+.qr-card {
+  background-color: var(--clr-white);
+  border-radius: var(--rd-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: var(--rd-400);
+}
 
-  .subtitles{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-  }
+.gap {
+  gap: var(--rd-500);
+}
 
-  .leading-text{
-    font-size: var(--fs-500);
-    font-weight: var(--fw-black);
-    color: var(--clr-text);
-    text-align: center;
-  }
+.qr-code {
+  border-radius: var(--rd-300);
+  width: 200px;
+  height: 200px;
+}
 
-  .mute-text{
-    font-size: var(--fs-300);
-    font-weight: var(--fw-regular);
-    color: var(--clr-cyan-300);
-    text-align: center;
-  }
+.subtitles {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.leading-text {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-black);
+  color: var(--clr-text);
+  text-align: center;
+}
+
+.mute-text {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  color: var(--clr-cyan-300);
+  text-align: center;
+}
