@@ -1,15 +1,10 @@
 :root {
   /* colors */
   --clr-white: hsl(220, 37%, 100%);
-  --clr-surface: hsl(212, 45%, 89%);
-  --clr-text: hsl(244, 44%, 14%);
 
-  --clr-yellow-400: hsl(42, 99%, 69%);
-  --clr-yellow-300: hsl(47, 100%, 90%);
-  --clr-purple-400: hsl(280, 96%, 45%);
-  --clr-purple-300: hsl(282, 89%, 90%);
-  --clr-cyan-400: hsl(198, 99%, 49%);
-  --clr-cyan-300: hsl(240, 100%, 90%);
+  --clr-slate-300:hsl(212, 45%, 89%);
+  --clr-slate-500:hsl(216, 15%, 48%);
+  --clr-slate-900:hsl(218, 44%, 22%);
 
   /* font families */
   --ff-base: "Outfit", sans-serif;
@@ -55,8 +50,8 @@
     4. Improve text rendering
   */
 body {
-  background: var(--clr-surface);
-  color: var(--clr-text);
+  background: var(--clr-slate-300);
+  color: var(--clr-slate-900);
   font-family: var(--ff-base);
   font-size: var(--fs-300);
 }
@@ -142,13 +137,13 @@ h6 {
 .leading-text {
   font-size: var(--fs-300);
   font-weight: var(--fw-black);
-  color: var(--clr-text);
+  color: var(--clr-slate-900);
   text-align: center;
 }
 
 .mute-text {
   font-size: var(--fs-200);
   font-weight: var(--fw-regular);
-  color: var(--clr-cyan-300);
+  color: var(--clr-slate-500);
   text-align: center;
 }
