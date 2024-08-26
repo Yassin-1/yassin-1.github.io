@@ -53,10 +53,13 @@
     4. Improve text rendering
   */
   body {
+    display: block;
+    align-items: center;
     background: var(--clr-surface);
     color: var(--clr-text);
     font-family: var(--ff-base);
     font-size: var(--fs-300);
+
   }
   /*
     5. Improve media defaults
@@ -93,25 +96,32 @@
     border-radius: var(--rd-400);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: var(--rd-400);
   }
 
   .qr-code{
     border-radius: var(--rd-300);
+    width: 400px;
   }
 
   .subtitles{
     display: flex;
     flex-direction: column;
+    width: 400px;
   }
 
   .leading-text{
     font-size: var(--fs-400);
     font-weight: var(--fw-black);
     color: var(--clr-text);
+    text-align: center;
   }
 
   .mute-text{
     font-size: var(--fs-300);
     font-weight: var(--fw-regular);
     color: var(--clr-cyan-300);
+    text-align: center;
   }
