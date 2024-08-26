@@ -120,6 +120,7 @@ h6 {
   align-items: center;
   width: fit-content;
   padding: var(--rd-400);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .gap {
